@@ -1,0 +1,32 @@
+{
+  "name": "notEqual",
+  "ns": "assert",
+  "description": "Tests shallow, coercive non-equality with the not equal comparison operator ( != ).",
+  "phrases": {
+    "active": "Assert *not* Equal"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "expect": {
+        "title": "Expect",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}

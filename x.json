@@ -1,0 +1,314 @@
+{
+  "name": "assert",
+  "description": "Assert for Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/assert.git"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert Deep Equal"
+      },
+      "description": "Tests for deep equality.",
+      "ns": "assert",
+      "name": "deepEqual",
+      "fn": "on.input.in = function() {\n  assert.deepEqual(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert Equal"
+      },
+      "description": "Tests shallow, coercive equality with the equal comparison operator ( == )",
+      "ns": "assert",
+      "name": "equal",
+      "fn": "on.input.in = function() {\n  assert.equal(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert Fail"
+      },
+      "description": "Throws an exception that displays the values for actual and expected",
+      "ns": "assert",
+      "name": "fail",
+      "fn": "on.input.in = function() {\n  assert.fail(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert if Error"
+      },
+      "description": "Tests if value is not a false value, throws if it is a true value. Useful when testing the error port.",
+      "ns": "assert",
+      "name": "ifError",
+      "fn": "on.input.in = function() {\n  assert.ifError(data);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert *not* Deep Equal"
+      },
+      "description": "Tests for any deep inequality.",
+      "ns": "assert",
+      "name": "notDeepEqual",
+      "fn": "on.input.in = function() {\n  assert.notDeepEqual(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert *not* Equal"
+      },
+      "description": "Tests shallow, coercive non-equality with the not equal comparison operator ( != ).",
+      "ns": "assert",
+      "name": "notEqual",
+      "fn": "on.input.in = function() {\n  assert.notEqual(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert Not Strict Equal"
+      },
+      "description": "Tests strict non-equality, as determined by the strict not equal operator ( !== )",
+      "ns": "assert",
+      "name": "notStrictEqual",
+      "fn": "on.input.in = function() {\n  assert.notStrictEqual(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "OK"
+      },
+      "description": "Tests if value is truthy",
+      "ns": "assert",
+      "name": "ok",
+      "fn": "on.input.in = function() {\n  assert.ok(data, input.msg);\n  cb({ out: data });\n}\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Actual",
+            "type": "any"
+          },
+          "expect": {
+            "title": "Expect",
+            "type": "any"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string",
+            "default": "Failed"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Actual",
+            "type": "any"
+          }
+        }
+      },
+      "expose": [
+        "assert"
+      ],
+      "phrases": {
+        "active": "Assert Strict Equal"
+      },
+      "description": "Tests strict equality, as determined by the strict equality operator ( === )",
+      "ns": "assert",
+      "name": "strictEqual",
+      "fn": "on.input.in = function() {\n  assert.strictEqual(data, input.expect, input.msg);\n  cb({ out: data });\n}\n"
+    }
+  ],
+  "twigs": []
+}

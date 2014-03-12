@@ -1,0 +1,32 @@
+{
+  "name": "notStrictEqual",
+  "ns": "assert",
+  "description": "Tests strict non-equality, as determined by the strict not equal operator ( !== )",
+  "phrases": {
+    "active": "Assert Not Strict Equal"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "expect": {
+        "title": "Expect",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "deepEqual",
+  "ns": "assert",
+  "description": "Tests for deep equality.",
+  "phrases": {
+    "active": "Assert Deep Equal"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "expect": {
+        "title": "Expect",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}

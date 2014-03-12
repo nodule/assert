@@ -1,0 +1,32 @@
+{
+  "name": "fail",
+  "ns": "assert",
+  "description": "Throws an exception that displays the values for actual and expected",
+  "phrases": {
+    "active": "Assert Fail"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "expect": {
+        "title": "Expect",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}

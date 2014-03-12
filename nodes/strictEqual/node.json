@@ -1,0 +1,32 @@
+{
+  "name": "strictEqual",
+  "ns": "assert",
+  "description": "Tests strict equality, as determined by the strict equality operator ( === )",
+  "phrases": {
+    "active": "Assert Strict Equal"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "expect": {
+        "title": "Expect",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}

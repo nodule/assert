@@ -1,0 +1,28 @@
+{
+  "name": "ok",
+  "ns": "assert",
+  "description": "Tests if value is truthy",
+  "phrases": {
+    "active": "OK"
+  },
+  "expose": ["assert"],
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Actual",
+        "type": "any"
+      },
+      "msg": {
+        "title": "Message",
+        "type": "string",
+        "default": "Failed"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Actual",
+        "type": "any"
+      }
+    }
+  }
+}
