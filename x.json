@@ -22,7 +22,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Not Deeply Equal"
           }
         },
         "output": {
@@ -59,7 +59,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Not Equal"
           }
         },
         "output": {
@@ -161,7 +161,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Deep Equal"
           }
         },
         "output": {
@@ -198,7 +198,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Equal"
           }
         },
         "output": {
@@ -235,7 +235,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Strict Equal"
           }
         },
         "output": {
@@ -268,7 +268,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Not OK"
           }
         },
         "output": {
@@ -305,7 +305,7 @@
           "msg": {
             "title": "Message",
             "type": "string",
-            "default": "Failed"
+            "default": "Not Strictly Equal"
           }
         },
         "output": {

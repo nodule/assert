@@ -19,7 +19,7 @@
       "msg": {
         "title": "Message",
         "type": "string",
-        "default": "Failed"
+        "default": "Not OK"
       }
     },
     "output": {

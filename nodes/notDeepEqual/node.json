@@ -23,7 +23,7 @@
       "msg": {
         "title": "Message",
         "type": "string",
-        "default": "Failed"
+        "default": "Deep Equal"
       }
     },
     "output": {
