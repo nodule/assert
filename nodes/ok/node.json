@@ -1,6 +1,7 @@
 {
   "name": "ok",
   "ns": "assert",
+  "async": true,
   "description": "Tests if value is truthy",
   "phrases": {
     "active": "OK"
@@ -10,6 +11,7 @@
     "input": {
       "in": {
         "title": "Actual",
+        "async": true,
         "type": "any"
       },
       "msg": {

@@ -1,6 +1,7 @@
 {
   "name": "strictEqual",
   "ns": "assert",
+  "async": true,
   "description": "Tests strict equality, as determined by the strict equality operator ( === )",
   "phrases": {
     "active": "Assert Strict Equal"
@@ -10,6 +11,7 @@
     "input": {
       "in": {
         "title": "Actual",
+        "async": true,
         "type": "any"
       },
       "expect": {
