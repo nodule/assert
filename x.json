@@ -32,9 +32,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert Deep Equal"
       },
@@ -69,9 +69,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert Equal"
       },
@@ -106,9 +106,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert Fail"
       },
@@ -134,9 +134,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert if Error"
       },
@@ -171,9 +171,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert *not* Deep Equal"
       },
@@ -208,9 +208,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert *not* Equal"
       },
@@ -245,9 +245,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert Not Strict Equal"
       },
@@ -278,9 +278,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "OK"
       },
@@ -315,9 +315,9 @@
           }
         }
       },
-      "expose": [
-        "assert"
-      ],
+      "require": {
+        "assert": "builtin"
+      },
       "phrases": {
         "active": "Assert Strict Equal"
       },

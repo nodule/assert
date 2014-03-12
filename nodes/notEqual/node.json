@@ -6,7 +6,9 @@
   "phrases": {
     "active": "Assert *not* Equal"
   },
-  "expose": ["assert"],
+  "require": {
+    "assert": "builtin"
+  },
   "ports": {
     "input": {
       "in": {
