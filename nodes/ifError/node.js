@@ -1,4 +1,4 @@
 on.input.in = function() {
   assert.ifError(data);
-  cb({ out: data });
+  output({ out: data });
 }
