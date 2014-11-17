@@ -6,9 +6,6 @@
   "phrases": {
     "active": "OK"
   },
-  "require": {
-    "assert": "builtin"
-  },
   "ports": {
     "input": {
       "in": {
@@ -27,6 +24,11 @@
         "title": "Actual",
         "type": "any"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "assert": "builtin"
     }
   }
 }

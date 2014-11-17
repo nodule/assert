@@ -6,9 +6,6 @@
   "phrases": {
     "active": "Assert if Error"
   },
-  "require": {
-    "assert": "builtin"
-  },
   "ports": {
     "input": {
       "in": {
@@ -22,6 +19,11 @@
         "title": "Actual",
         "type": "any"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "assert": "builtin"
     }
   }
 }

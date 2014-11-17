@@ -6,9 +6,6 @@
   "phrases": {
     "active": "Assert Strict Equal"
   },
-  "require": {
-    "assert": "builtin"
-  },
   "ports": {
     "input": {
       "in": {
@@ -31,6 +28,11 @@
         "title": "Actual",
         "type": "any"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "assert": "builtin"
     }
   }
 }
