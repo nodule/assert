@@ -21,5 +21,8 @@
   "chix": {
     "name": "assert",
     "color": "rgb(136,0,35)"
+  },
+  "dependencies": {
+    "assert": "^1.1.2"
   }
 }

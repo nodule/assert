@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "npm": {
-      "assert": "builtin"
+      "assert": "1.x.x"
     }
   }
 }
