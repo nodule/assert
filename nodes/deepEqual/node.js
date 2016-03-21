@@ -1,4 +1,4 @@
 on.input.in = function() {
   assert.deepEqual($.in, $.expect, $.msg);
-  output({ out: $.in });
+  output({ out: $.get('in') });
 }

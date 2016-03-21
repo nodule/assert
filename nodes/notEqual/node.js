@@ -1,4 +1,4 @@
 on.input.in = function() {
   assert.notEqual($.in, $.expect, $.msg);
-  output({ out: $.in });
+  output({ out: $.get('in') });
 }
