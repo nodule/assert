@@ -1,4 +1,4 @@
 on.input.in = function() {
-  assert.notDeepEqual(data, input.expect, input.msg);
-  output({ out: data });
+  assert.notDeepEqual(input.in, input.expect, input.msg);
+  output({ out: input.in });
 }

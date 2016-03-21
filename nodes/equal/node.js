@@ -1,4 +1,4 @@
 on.input.in = function() {
-  assert.equal(data, input.expect, input.msg);
-  output({ out: data });
+  assert.equal(input.in, input.expect, input.msg);
+  output({ out: input.in });
 }
