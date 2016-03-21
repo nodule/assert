@@ -1,4 +1,4 @@
 on.input.in = function() {
-  assert.ifError(input.in);
-  output({ out: input.in });
+  assert.ifError($.in);
+  output({ out: $.in });
 }
