@@ -47,7 +47,7 @@
       "async": true,
       "ns": "assert",
       "name": "deepEqual",
-      "fn": "on.input.in = function() {\n  assert.deepEqual(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.deepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -86,7 +86,7 @@
       "async": true,
       "ns": "assert",
       "name": "equal",
-      "fn": "on.input.in = function() {\n  assert.equal(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.equal($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -125,7 +125,7 @@
       "async": true,
       "ns": "assert",
       "name": "fail",
-      "fn": "on.input.in = function() {\n  assert.fail(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.fail($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -155,7 +155,7 @@
       "async": true,
       "ns": "assert",
       "name": "ifError",
-      "fn": "on.input.in = function() {\n  assert.ifError(data);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.ifError($.in);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -194,7 +194,7 @@
       "async": true,
       "ns": "assert",
       "name": "notDeepEqual",
-      "fn": "on.input.in = function() {\n  assert.notDeepEqual(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.notDeepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -233,7 +233,7 @@
       "async": true,
       "ns": "assert",
       "name": "notEqual",
-      "fn": "on.input.in = function() {\n  assert.notEqual(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.notEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -272,7 +272,7 @@
       "async": true,
       "ns": "assert",
       "name": "notStrictEqual",
-      "fn": "on.input.in = function() {\n  assert.notStrictEqual(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.notStrictEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -307,7 +307,7 @@
       "async": true,
       "ns": "assert",
       "name": "ok",
-      "fn": "on.input.in = function() {\n  assert.ok(data, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.ok($.in, $.msg);\n  output({ out: $.get('in') });\n}\n"
     },
     {
       "dependencies": {
@@ -346,7 +346,7 @@
       "async": true,
       "ns": "assert",
       "name": "strictEqual",
-      "fn": "on.input.in = function() {\n  assert.strictEqual(data, input.expect, input.msg);\n  output({ out: data });\n}\n"
+      "fn": "on.input.in = function() {\n  assert.strictEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     }
   ],
   "twigs": []

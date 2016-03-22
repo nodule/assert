@@ -14,9 +14,9 @@ module.exports = {
         type: "any",
         fn: function __IN__(data, x, source, state, input, output, assert) {
           var r = function() {
-            assert.notEqual(data, input.expect, input.msg);
+            assert.notEqual($.in, $.expect, $.msg);
             output({
-              out: data
+              out: $.get('in')
             });
           }.call(this);
           return {

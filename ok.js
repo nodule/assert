@@ -14,9 +14,9 @@ module.exports = {
         type: "any",
         fn: function __IN__(data, x, source, state, input, output, assert) {
           var r = function() {
-            assert.ok(data, input.msg);
+            assert.ok($.in, $.msg);
             output({
-              out: data
+              out: $.get('in')
             });
           }.call(this);
           return {
