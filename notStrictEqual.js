@@ -12,7 +12,7 @@ module.exports = {
         title: "Actual",
         async: true,
         type: "any",
-        fn: function __IN__(data, x, source, state, input, output, assert) {
+        fn: function __IN__(data, source, state, input, $, output, assert) {
           var r = function() {
             assert.notStrictEqual($.in, $.expect, $.msg);
             output({
