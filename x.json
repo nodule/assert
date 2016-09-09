@@ -11,10 +11,12 @@
   },
   "nodes": [
     {
-      "dependencies": {
-        "npm": {
-          "assert": "1.x.x"
-        }
+      "name": "deepEqual",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests for deep equality.",
+      "phrases": {
+        "active": "Assert Deep Equal"
       },
       "ports": {
         "input": {
@@ -40,20 +42,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert Deep Equal"
-      },
-      "description": "Tests for deep equality.",
-      "async": true,
-      "ns": "assert",
-      "name": "deepEqual",
-      "fn": "on.input.in = function() {\n  assert.deepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.deepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "equal",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests shallow, coercive equality with the equal comparison operator ( == )",
+      "phrases": {
+        "active": "Assert Equal"
       },
       "ports": {
         "input": {
@@ -79,20 +81,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert Equal"
-      },
-      "description": "Tests shallow, coercive equality with the equal comparison operator ( == )",
-      "async": true,
-      "ns": "assert",
-      "name": "equal",
-      "fn": "on.input.in = function() {\n  assert.equal($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.equal($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "fail",
+      "ns": "assert",
+      "async": true,
+      "description": "Throws an exception that displays the values for actual and expected",
+      "phrases": {
+        "active": "Assert Fail"
       },
       "ports": {
         "input": {
@@ -118,20 +120,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert Fail"
-      },
-      "description": "Throws an exception that displays the values for actual and expected",
-      "async": true,
-      "ns": "assert",
-      "name": "fail",
-      "fn": "on.input.in = function() {\n  assert.fail($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.fail($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "ifError",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests if value is not a false value, throws if it is a true value. Useful when testing the error port.",
+      "phrases": {
+        "active": "Assert if Error"
       },
       "ports": {
         "input": {
@@ -148,20 +150,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert if Error"
-      },
-      "description": "Tests if value is not a false value, throws if it is a true value. Useful when testing the error port.",
-      "async": true,
-      "ns": "assert",
-      "name": "ifError",
-      "fn": "on.input.in = function() {\n  assert.ifError($.in);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.ifError($.in);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "notDeepEqual",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests for any deep inequality.",
+      "phrases": {
+        "active": "Assert *not* Deep Equal"
       },
       "ports": {
         "input": {
@@ -187,20 +189,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert *not* Deep Equal"
-      },
-      "description": "Tests for any deep inequality.",
-      "async": true,
-      "ns": "assert",
-      "name": "notDeepEqual",
-      "fn": "on.input.in = function() {\n  assert.notDeepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.notDeepEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "notEqual",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests shallow, coercive non-equality with the not equal comparison operator ( != ).",
+      "phrases": {
+        "active": "Assert *not* Equal"
       },
       "ports": {
         "input": {
@@ -226,20 +228,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert *not* Equal"
-      },
-      "description": "Tests shallow, coercive non-equality with the not equal comparison operator ( != ).",
-      "async": true,
-      "ns": "assert",
-      "name": "notEqual",
-      "fn": "on.input.in = function() {\n  assert.notEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.notEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "notStrictEqual",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests strict non-equality, as determined by the strict not equal operator ( !== )",
+      "phrases": {
+        "active": "Assert Not Strict Equal"
       },
       "ports": {
         "input": {
@@ -265,20 +267,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert Not Strict Equal"
-      },
-      "description": "Tests strict non-equality, as determined by the strict not equal operator ( !== )",
-      "async": true,
-      "ns": "assert",
-      "name": "notStrictEqual",
-      "fn": "on.input.in = function() {\n  assert.notStrictEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.notStrictEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "ok",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests if value is truthy",
+      "phrases": {
+        "active": "OK"
       },
       "ports": {
         "input": {
@@ -300,20 +302,20 @@
           }
         }
       },
-      "phrases": {
-        "active": "OK"
-      },
-      "description": "Tests if value is truthy",
-      "async": true,
-      "ns": "assert",
-      "name": "ok",
-      "fn": "on.input.in = function() {\n  assert.ok($.in, $.msg);\n  output({ out: $.get('in') });\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "assert": "1.x.x"
         }
+      },
+      "fn": "on.input.in = function() {\n  assert.ok($.in, $.msg);\n  output({ out: $.get('in') });\n}\n"
+    },
+    {
+      "name": "strictEqual",
+      "ns": "assert",
+      "async": true,
+      "description": "Tests strict equality, as determined by the strict equality operator ( === )",
+      "phrases": {
+        "active": "Assert Strict Equal"
       },
       "ports": {
         "input": {
@@ -339,15 +341,12 @@
           }
         }
       },
-      "phrases": {
-        "active": "Assert Strict Equal"
+      "dependencies": {
+        "npm": {
+          "assert": "1.x.x"
+        }
       },
-      "description": "Tests strict equality, as determined by the strict equality operator ( === )",
-      "async": true,
-      "ns": "assert",
-      "name": "strictEqual",
       "fn": "on.input.in = function() {\n  assert.strictEqual($.in, $.expect, $.msg);\n  output({ out: $.get('in') });\n}\n"
     }
-  ],
-  "twigs": []
+  ]
 }
